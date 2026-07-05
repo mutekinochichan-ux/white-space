@@ -1,0 +1,129 @@
+# white-space<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Whitespace</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    background: #faf8f5;
+    color: #333;
+    line-height: 1.8;
+  }
+
+  /* 共通余白 */
+  section {
+    padding: 120px 10%;
+  }
+
+  /* ファーストビュー */
+  .hero {
+    height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1520975922284-9d2c1b5a1a3b');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px 10%;
+    color: white;
+  }
+
+  .hero h1 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  .hero p {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+
+  /* セクションタイトル */
+  h2 {
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 60px;
+  }
+
+  /* 写真日記 */
+  .journal img {
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+
+  .journal p {
+    margin-bottom: 80px;
+    color: #666;
+  }
+
+  /* ギャラリー */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+  }
+
+  .gallery img {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  /* About */
+  .about {
+    max-width: 600px;
+  }
+
+</style>
+</head>
+
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <div>
+    <h1>Whitespace</h1>
+    <p>Refining this whitespace is just as vital as making peace with my past.</p>
+  </div>
+</div>
+
+<!-- Journal -->
+<section class="journal">
+  <h2>Photo Diary</h2>
+
+  <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+  <p>静かな朝の光</p>
+
+  <img src="https://images.unsplash.com/photo-1520975682031-a8b0b2b0c7b1">
+  <p>余白のある時間</p>
+
+  <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b">
+  <p>思考がほどける午後</p>
+</section>
+
+<!-- Gallery -->
+<section>
+  <h2>Gallery</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429">
+    <img src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d">
+    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e">
+    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e">
+  </div>
+</section>
+
+<!-- About -->
+<section class="about">
+  <h2>About</h2>
+  <p>
+    This site is an exploration of space, silence, and memory.<br>
+    Not to fill the void, but to understand it.
+  </p>
+</section>
+
+</body>
+</html>
